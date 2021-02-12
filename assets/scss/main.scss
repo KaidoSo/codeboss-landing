@@ -5,3 +5,24 @@
 
     font-family: 'Fira Sans', sans-serif; 
 }
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .container {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+
+        max-width: 1600px;
+        margin: 0 auto;
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+}
