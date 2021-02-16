@@ -180,15 +180,15 @@ main {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 16px;
+            margin-bottom: 32px;
 
             .project {
                 background-image: url('../images/project-img.jpg');
                 background-size: cover;
-                align-items: center;
+                background-position: center center;
+                background-repeat: no-repeat;
                 border-radius: 16px;
                 overflow: hidden;
-
-
 
                 &:nth-child(2) {
                     background-image: url('../images/project-img-2.jpg');
@@ -230,6 +230,10 @@ main {
                     }
                 }
             }
+        }
+
+        .center {
+            text-align: center;
         }
     }
 }
