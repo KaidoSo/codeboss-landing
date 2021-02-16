@@ -19,14 +19,21 @@ body {
 }
 
 .button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
     display: inline-block;
     color:#fff;
+    font-size: 20px;
     background-color: #ff9fdb;
     padding: 12px 16px;
     border-radius: 8px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer
 }
 
 section {
@@ -234,6 +241,60 @@ main {
 
         .center {
             text-align: center;
+        }
+    }
+
+    .contact {
+        background-color: #9b75d7;
+
+        .container {
+            padding-top: 64px;
+            padding-bottom: 64px;
+
+            h2 {
+                color: #fff;
+            }
+
+            form {
+                display: block;
+                margin: 0 auto;
+                max-width: 680px;
+
+                .form-grid {
+                    display: grid;
+                    grid-gap: 16px;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-bottom: 11px;
+
+                    .form-element, .form-area {
+                        appearance: none;
+                        border: none;
+                        outline: none;
+                        background: none;
+
+                        display: block;
+                        width: 100%;
+                        background-color: #fff;
+                        border-radius: 8px;
+
+                        padding: 16px;
+                        font-size: 20px;
+                        color: #313131;
+
+                        &:placeholder {
+                            color: #aaa;
+                        }
+                    }
+
+                    .form-area {
+                        grid-column: 1/-1;
+                    }
+                }
+
+                .right-align {
+                    text-align: right;
+                }
+            }
         }
     }
 }
