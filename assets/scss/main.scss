@@ -6,16 +6,33 @@
     font-family: 'Fira Sans', sans-serif; 
 }
 
-body {
-    // height: 5000px;
-}
-
 .container {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
     padding-left: 128px;
     padding-right: 128px;
+
+    @media (max-width: 1024px) {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    @media (max-width: 767px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+section {
+    h2 {
+        text-align: center;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+
+        color: #313131;
+        font-size: 36px;
+    }
 }
 
 .button {
@@ -33,17 +50,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    cursor: pointer
-}
+    cursor: pointer;
 
-section {
-    h2 {
-        text-align: center;
-        margin-bottom: 32px;
-        text-transform: uppercase;
-
-        color: #313131;
-        font-size: 36px;
+    @media (max-width: 767px) {
+        font-size: 18px;
     }
 }
 
@@ -58,19 +68,17 @@ header {
     left: 0;
     width: 100%;
     z-index: 99;
+    // background-color: #12002F;
 
     .container {
         padding-top: 32px;
         padding-bottom: 32px;
         display: flex;
         justify-content: space-between;
-
-        max-width: 1600px;
-        margin: 0 auto;
-        padding-left: 128px;
-        padding-right: 128px;
+        align-items: center;
 
         h2 {
+            color: inherit;
             text-transform: uppercase;
             font-size: 32px;
             font-weight: 900;
@@ -84,6 +92,10 @@ header {
             display: grid;
             grid-gap: 16px;
             grid-template-columns: repeat(4, auto);
+
+            @media (max-width: 767px) {
+                display: none;
+            }
 
             a{
                 color: inherit;
@@ -128,7 +140,11 @@ main {
                 margin-bottom: 32px;
 
                 span {
-                    color: #ff9fdb;
+                    color: #ff9fdb;        
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 32px;
                 }
             }
 
@@ -136,6 +152,10 @@ main {
                 font-size: 36px;
                 font-weight: 400;
                 margin-bottom: 32px;
+
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -151,6 +171,14 @@ main {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-gap: 16px;
+
+                @media (max-width: 1024px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media (max-width: 767px) {
+                    grid-template-columns: 1fr;
+                }
 
                 .service {
                     background-color: #fff;
@@ -189,6 +217,14 @@ main {
             grid-gap: 16px;
             margin-bottom: 32px;
 
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 767px) {
+                grid-template-columns: 1fr;
+            }
+
             .project {
                 background-image: url('../images/project-img.jpg');
                 background-size: cover;
@@ -196,6 +232,10 @@ main {
                 background-repeat: no-repeat;
                 border-radius: 16px;
                 overflow: hidden;
+                background-color: #fff;
+                border-radius: 6px;
+                overflow: hidden;
+                box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 
                 &:nth-child(2) {
                     background-image: url('../images/project-img-2.jpg');
@@ -223,11 +263,19 @@ main {
                     h3 {
                         font-size: 32px;
                         margin-bottom: 16px;
+
+                        @media (max-width: 1024px) {
+                            font-size: 28px;
+                        }
                     }
 
                     p {
                         font-size: 18px;
                         margin-bottom: 16px;
+
+                        @media (max-width: 1024px) {
+                            font-size: 16px;
+                        }
                     }
                 }
 
@@ -266,6 +314,10 @@ main {
                     grid-template-columns: repeat(2, 1fr);
                     margin-bottom: 11px;
 
+                    @media (max-width: 767px) {
+                        grid-template-columns: 1fr;
+                    }
+
                     .form-element, .form-area {
                         appearance: none;
                         border: none;
@@ -296,5 +348,11 @@ main {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .hide-mob{
+        display: none;
     }
 }
