@@ -29,6 +29,17 @@ body {
     font-weight: 700;
 }
 
+section {
+    h2 {
+        text-align: center;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+
+        color: #313131;
+        font-size: 36px;
+    }
+}
+
 .img {
     max-width: 100%;
 }
@@ -129,15 +140,6 @@ main {
             padding-top: 64px;
             padding-bottom: 64px;
 
-            h2 {
-                text-align: center;
-                margin-bottom: 32px;
-                text-transform: uppercase;
-
-                color: #313131;
-                font-size: 36px;
-            }
-
             .services-grid {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -167,6 +169,17 @@ main {
                     }
                 }
             }
+        }
+    }
+
+    .projects {
+        padding-top: 64px;
+        padding-bottom: 64px;
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 16px;
         }
     }
 }
