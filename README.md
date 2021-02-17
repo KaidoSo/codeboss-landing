@@ -6,9 +6,9 @@ Project could be viewed live at: (https://kaidoso.github.io/codeboss-landing/)
 
 ### Screen Shot
 
-![Fullscreen](https://raw.githubusercontent.com/KaidoSo/codeboss-landing/assets/images/FullScreenShot.png)
+![Fullscreen](https://raw.githubusercontent.com/KaidoSo/codeboss-landing/main/assets/images/FullScreenShot.png)
 
-![Mobile](https://raw.githubusercontent.com/KaidoSo/codeboss-landing/assets/images/MobileScreenShot.png)
+![Mobile](https://raw.githubusercontent.com/KaidoSo/codeboss-landing/main/assets/images/MobileScreenShot.png)
 
 # Purpose of the project
 
